@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  background-image: linear-gradient(to right, #000000 0%, #434343 51%, #000000 100%);
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.gradient,
+.active {
+  border: 3px solid white;
+  box-shadow: 0 0 20px #eee;
+}
+
+.modal-box {
+  --size: 150px;
+  position: relative;
+  height: 59px;
+  height: 4rem;
+  box-shadow: 0 0 15px 3px rgb(57, 57, 57);
+  background-image: linear-gradient(to right, #000000 0%, #434343 51%, #000000 100%);
+  border-radius: 10px;
+}
+
+.modal-box:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: calc(var(--size) * 0.13) solid transparent;
+  border-bottom-color: #333;
+  border-top: 0;
+  margin-left: calc(var(--size) * 0.13 * -1);
+  margin-top: calc(var(--size) * 0.13 * -1);
+}
+
+.skill-part {
+  transform:
+    perspective(800px) translate3d(0px, 0px, -250px) rotateX(27deg) scale(0.9, 0.9);
+  border-radius: 20px;
+  border: 5px solid #e6e6e6;
+  box-shadow: 0 70px 40px -20px rgba(0, 0, 0, 0.2);
+  transition: 0.7s ease-in-out transform;
+}
+
+.skill-part:hover {
+  transform: translate3d(0px, 0px, -250px);
+  box-shadow: 0 0 15px 3px black;
+  width: 90%;
+
+  margin: auto;
+}
+
+.copyurl {
+  box-shadow: 0 0 20px 3px rgb(74, 74, 73);
+  padding: 5px;
+  font-weight: 600;
+}
+
+
+.skills-part {
+  box-shadow: 0 0 20px 3px black;
+  border-radius: 20px;
+}
+
+.pp {
+  box-shadow: 0 0 20px 3px black;
+}
+
+.share {
+  box-shadow: 0 0 20px 2px rgb(155, 155, 152);
+  padding: 5px;
+}
+
+.copy {
+  box-shadow: 0 0 20px 3px black;
+  padding: 5px;
+  background-color: #333;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.self-img {
+  box-shadow: 0 0 20px 3px rgb(69, 65, 65);
+  border-radius: 100%;
+}
+
+.contact-form {
+  box-shadow: 0 0 20px 3px black;
+}
+
+.active {
+  color: #fff;
+  padding: 1rem;
+  border-radius: 100%;
+}
+
+@layer base {
+  body {
+    @apply font-secondary text-lg leading-8 text-white;
+  }
+
+  .h2 {
+    @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
+  }
+
+  .h3 {
+    @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
+  }
+
+  .btn {
+    @apply rounded-full font-primary text-white font-medium;
+  }
+
+  .btn-sm {
+    @apply h-[48px] px-6 text-sm;
+  }
+
+  .btn-lg {
+    @apply h-[56px] px-10 text-base;
+  }
+
+  .btn-link {
+    @apply text-base;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#ffffff] to-[#fbd100] font-bold font-primary hover:from-[#fde405] hover:to-[#ffffff];
+  }
+
+  .section {
+    @apply py-8 lg:py-24 lg:h-screen flex items-center;
+  }
+}
