@@ -9,7 +9,7 @@ import { Link } from 'react-scroll';
 const Banner = () => {
 
 
-  return <div id='home' className='min-h-[85vh] lg:min-h-[78vh] flex items-center  -my-10 lg:my-0 mt-3   ' >
+  return <div id='home' className='min-h-[70vh] lg:min-h-[78vh] flex items-center  -my-9 lg:my-2 mt-3    ' >
     <div className=' container mx-auto homepage'>
       <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12  '>
         <div className=' flex-1 text-center font-secondary lg:text-left  '>

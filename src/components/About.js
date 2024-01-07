@@ -15,9 +15,9 @@ const About = () => {
 
   return <div id='about' className='section  ' ref={ref}>
     <div className='container mx-auto   ' >
-      <div className='flex flex-col sm:gap-y-8 lg:flex-row lg:item-center lg:gap-x-20 h-[100vh] '>
+      <div className='flex flex-col sm:gap-y-8 lg:flex-row lg:item-center lg:gap-x-20 h-[110vh] lg:mt-12  '>
         <motion.div
-          className=' flex-1  bg-about bg-contain bg-no-repeat h-[80%] mix-blend-lighten bg-top  '
+          className=' flex-1   bg-about bg-contain bg-no-repeat  mix-blend-lighten bg-top  '
           variants={fadeIn('right', 0.3)}
           initial='hidden'
           whileInView={'show'}
@@ -33,7 +33,7 @@ const About = () => {
         >
           <h2 className=' h2 text-yellow-400 font-bold '>About Me</h2>
           <h3 className='h3 mb-4 ' >I'm a Frontend Developer </h3>
-          <p className='mb-6  '>
+          <p className='mb-1  '>
             Passionate wordsmith and avid explorer of ideas, Driven front-end developer with a flair
             for transforming designs into seamless, user-centric experiences. Proficient in HTML, CSS, Tailwind,
             JavaScript and react I blend technical
