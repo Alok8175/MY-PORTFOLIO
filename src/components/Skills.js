@@ -33,7 +33,7 @@ const services = [
 ];
 
 const Skills = () => {
-  return <div id='service' className='section lg:mt-1 mt-5 ' >
+  return <div id='service' className='section lg:mt-1 sm:mt-10 mt-15 ' >
 
     <div className='container mx-auto'>
       <div className='flex flex-col lg:flex-row lg:gap-5 '>
