@@ -14,7 +14,7 @@ const Header = () => {
         <a href='#'>
           <img src={Logo} className='md:w-[200px] w-[150px] ' />
         </a>
-        <button className='btn btn-sm flex gap-4 items-center px-3 ' >MY PORTFOLIO
+        <button className='btn btn-sm flex gap-4 items-center px-3 ml-2 ' >MY PORTFOLIO
           <button className='text-2xl rounded-full share  ' onClick={() => setshowShare(true)} >
             <PiShareFatBold />
           </button>
