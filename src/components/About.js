@@ -39,7 +39,7 @@ const About = () => {
             JavaScript and react I blend technical
             expertise with a keen eye for design aesthetics.
           </p>
-          <div>
+          <div className=' mt-4 '>
             <div className=' mt-5' >
               <div className=' text-[40px] font-tertiary text-gradient  mb-2  '>
                 {
