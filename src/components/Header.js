@@ -8,7 +8,7 @@ const Header = () => {
 
   const [showShare, setshowShare] = useState(false);
 
-  return <div className=' py-8 pb-0 ' >
+  return <div className=' py-8 pb-0 mb-2 ' >
     <div className='container mx-auto' >
       <div className='flex justify-between items-center ' >
         <a href='#'>

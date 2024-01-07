@@ -9,16 +9,16 @@ import { Link } from 'react-scroll';
 const Banner = () => {
 
 
-  return <div id='home' className='min-h-[85vh] lg:min-h-[78vh] flex items-center  -my-10 lg:my-0   ' >
+  return <div id='home' className='min-h-[85vh] lg:min-h-[78vh] flex items-center  -my-10 lg:my-0 mt-3   ' >
     <div className=' container mx-auto homepage'>
-      <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12 '>
+      <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12  '>
         <div className=' flex-1 text-center font-secondary lg:text-left  '>
           <motion.h1
             variants={fadeIn('up', 0.4)}
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, ammount: 0.7 }}
-            className='text-[55px] font-bold leading-[0.8] lg:text-[110px] ' >ALOK <span>MAURYA</span>
+            className='text-[55px] font-bold leading-[0.8] lg:text-[110px] ' >AALOK <span>MAURYA</span>
           </motion.h1>
           <motion.div
             variants={fadeIn('up', 0.8)}

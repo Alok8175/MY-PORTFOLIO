@@ -27,6 +27,7 @@ module.exports = {
         sitewhite: "url('./assets/whitebg.jpg')",
         about: "url('./assets/aboutimg.png')",
         services: "url('./assets/skills.png')",
+        
       },
     },
   },

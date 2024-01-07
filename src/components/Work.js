@@ -15,14 +15,14 @@ const Work = () => {
 
       <div className='flex flex-col lg:flex-row gap-x-10 gap-y-10 '>
 
-        <div className='flex flex-1 flex-col gap-y-10  lg:mb-0'>
-
-          <motion.div
-            variants={fadeIn('right', 0.5)}
+        <motion.div className='flex flex-1 flex-col gap-y-10  lg:mb-0'
+              variants={fadeIn('right', 0.5)}
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, ammount: 0.3 }}
-          >
+        >
+       
+          <div  className='  '>
             <h2 className='h2 leading-tight text-yellow-500 font-semibold '>My Latest Projects</h2>
             <p className='max-w-xl mb-16 '>
               My recent frontend projects seamlessly merge captivating design with flawless functionality, delivering optimal user experiences.
@@ -32,14 +32,9 @@ const Work = () => {
                 view All projects
               </button>
             </Link>
-          </motion.div>
+          </div>
 
-          <motion.div
-            variants={fadeIn('right', 0.5)}
-            initial='hidden'
-            whileInView={'show'}
-            viewport={{ once: false, ammount: 0.3 }}
-            className=' group pp relative overflow-hidden border-2 border-white/50 rounded-xl md:mt-20  '>
+          <div className=' group pp relative overflow-hidden border-2 border-white/50 rounded-xl md:mt-20  '>
 
             <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300  '> </div>
             <img className='group-hover:scale-125 transition-all duration-500  ' src={Img1} />
@@ -55,9 +50,9 @@ const Work = () => {
               <a href='https://github.com/Alok8175/WEATHER-APP.git' ><FaLink /></a>
             </div>
 
-          </motion.div>
+          </div>
 
-        </div>
+        </motion.div>
 
 
         <motion.div

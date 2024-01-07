@@ -33,17 +33,17 @@ const services = [
 ];
 
 const Skills = () => {
-  return <div id='service' className='section lg:mt-17 ' >
+  return <div id='service' className='section lg:mt-17 mt-8 ' >
 
     <div className='container mx-auto'>
-      <div className='flex flex-col lg:flex-row '>
+      <div className='flex flex-col lg:flex-row lg:gap-5 '>
 
         <motion.div
           variants={fadeIn('right', 0.3)}
           initial='hidden'
           whileInView={'show'}
           viewport={{ once: false, ammount: 0.3 }}
-          className='flex-1 lg:bg-services lg:bg-bottom  bg-no-repeat mix-blend-lighten mb-12 lg:mb-0 '>
+          className='flex-1 lg:bg-services lg:bg-bottom  bg-no-repeat mix-blend-lighten sm:mb-2 mb:5 lg:mb-0 '>
           <h2 className='h2 text-yellow-400 font-bold mb-6'> My tech Skills</h2>
           <h3 className='h3 ma-w-[455px] mb-16 t '> I am a Creative frontend developer fluent in HTML, CSS, Tailwind, JavaScript, & React
             dedicated to building sleek, intuitive user interfaces that elevate web experiences. </h3>

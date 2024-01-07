@@ -8,16 +8,16 @@ import Modal from './Modal';
 const About = () => {
 
   const [ref, inView] = useInView({
-    threshold: 0.4,
+    threshold: 0.25,
   });
 
   const [showModal, setshowModal] = useState(false);
 
-  return <div id='about' className='section ' ref={ref}>
+  return <div id='about' className='section  ' ref={ref}>
     <div className='container mx-auto   ' >
-      <div className='flex flex-col gap-y-8 lg:flex-row lg:item-center lg:gap-x-20 h-screen '>
+      <div className='flex flex-col sm:gap-y-8 lg:flex-row lg:item-center lg:gap-x-20 h-[100vh] '>
         <motion.div
-          className='flex-1 bg-about bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top  '
+          className=' flex-1  bg-about bg-contain bg-no-repeat h-[80%] mix-blend-lighten bg-top  '
           variants={fadeIn('right', 0.3)}
           initial='hidden'
           whileInView={'show'}
@@ -40,8 +40,8 @@ const About = () => {
             expertise with a keen eye for design aesthetics.
           </p>
           <div>
-            <div>
-              <div className=' text-[40px] font-tertiary text-gradient  mb-2'>
+            <div className=' mt-5' >
+              <div className=' text-[40px] font-tertiary text-gradient  mb-2  '>
                 {
                   inView ? <CountUp start={0} end={10} duration={4} /> : null
                 }
