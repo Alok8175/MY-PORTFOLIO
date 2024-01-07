@@ -28,10 +28,10 @@ const Share = ({ onclose }) => {
                         <IoCloseCircleOutline onClick={onclose} />
                     </div>
                     <div className=''>
-                        <div className=' place-self-end text-white  '>
+                        {/* <div className=' place-self-end text-white  '>
                             <input value={url} className='bg-black bg-opacity-0 copy  rounded-lg pp px-3 ' />
 
-                        </div>
+                        </div> */}
                         <div className=' flex justify-center rounded-lg copyurl mt-1  '>
                             <CopyToClipboard text={url} >
                                 <button onClick={(e) => { shareHandler(e) }} >
