@@ -39,8 +39,8 @@ const About = () => {
             JavaScript and react I blend technical
             expertise with a keen eye for design aesthetics.
           </p>
-          <div className=' mt-4 py-1  '>
-            <div className=' mt-5' >
+          <div className=' mt-4  py-1 bg-slate-500  '>
+            <div className=' mt-5 bg-slate-700 pt-2 ' >
               <div className=' text-[40px] font-tertiary text-gradient  mb-2  '>
                 {
                   inView ? <CountUp start={0} end={10} duration={4} /> : null
