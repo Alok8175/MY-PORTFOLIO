@@ -25,7 +25,7 @@ const About = () => {
         >
         </motion.div>
 
-        <motion.div className='flex-1 lg:mt-24 '
+        <motion.div className='flex-1 lg:mt-24 mb-2'
           variants={fadeIn('left', 0.5)}
           initial='hidden'
           whileInView={'show'}
@@ -33,15 +33,15 @@ const About = () => {
         >
           <h2 className=' h2 text-yellow-400 font-bold '>About Me</h2>
           <h3 className='h3 mb-4 ' >I'm a Frontend Developer </h3>
-          <p className='mb-6'>
+          <p className='mb-6  '>
             Passionate wordsmith and avid explorer of ideas, Driven front-end developer with a flair
             for transforming designs into seamless, user-centric experiences. Proficient in HTML, CSS, Tailwind,
             JavaScript and react I blend technical
             expertise with a keen eye for design aesthetics.
           </p>
-          <div className=' mt-4 '>
+          <div className=' mt-4 py-1  '>
             <div className=' mt-5' >
-              <div className=' text-[40px] font-tertiary text-gradient  mb-2 z-10 '>
+              <div className=' text-[40px] font-tertiary text-gradient  mb-2  '>
                 {
                   inView ? <CountUp start={0} end={10} duration={4} /> : null
                 }
